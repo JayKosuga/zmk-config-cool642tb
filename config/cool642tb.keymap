@@ -151,10 +151,10 @@
 
         NUM {
             bindings = <
-&kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)                &kp RS(NUMBER_6)  &kp RS(N7)      &kp RS(F8)       &kp RS(N9)  &kp RS(N0)
-&none             &none             &none             &none             &none       &none  &none  &none             &kp UP_ARROW    &none            &none       &none
-&none             &none             &none             &none             &none       &none  &none  &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW  &none       &none
-&none             &none             &none             &none             &none       &none  &none  &none                                                          &none
+&kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)                  &kp RS(NUMBER_6)  &kp RS(N7)      &kp RS(F8)       &kp RS(N9)  &kp RS(N0)
+&trans            &trans            &trans            &trans            &trans      &trans  &trans  &trans            &kp UP_ARROW    &trans           &trans      &trans
+&trans            &trans            &trans            &trans            &trans      &trans  &trans  &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans      &trans
+&trans            &trans            &trans            &trans            &trans      &trans  &trans  &trans                                                         &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
