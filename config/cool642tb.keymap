@@ -85,13 +85,13 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E     &kp R                  &kp T                                                        &kp Y                   &kp U  &kp I      &kp O       &kp P
-&kp A             &kp S         &kp D     &kp F                  &kp G            &trans               &kp APOS               &kp H                   &kp J  &kp K      &kp L       &mt PLUS MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C     &kp V                  &kp B            &kp TAB              &kp SEMI               &kp N                   &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&kp ESCAPE        &kp LEFT_ALT  &kp CAPS  &lt 1 INTERNATIONAL_5  &lt 5 BACKSPACE  &mt LEFT_GUI RETURN  &lt 2 INTERNATIONAL_5  &mt LEFT_COMMAND SPACE                                &kp EQUAL
+&kp Q             &kp W         &kp E     &kp R                  &kp T                                                            &kp Y                   &kp U  &kp I      &kp O       &kp P
+&kp A             &kp S         &kp D     &kp F                  &kp G         &trans                      &kp APOS               &kp H                   &kp J  &kp K      &kp L       &mt PLUS MINUS
+&mt LEFT_SHIFT Z  &kp X         &kp C     &kp V                  &kp B         &kp TAB                     &kp SEMI               &kp N                   &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
+&kp ESCAPE        &kp LEFT_ALT  &kp CAPS  &lt 5 INTERNATIONAL_5  &mt LGUI RET  &lt_to_layer_0 1 BACKSPACE  &lt 2 INTERNATIONAL_5  &mt LEFT_COMMAND SPACE                                &kp EQUAL
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
         FUNCTION {
@@ -119,6 +119,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
         };
 
         MOUSE {
@@ -132,10 +134,10 @@
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans
+&trans  &trans          &msc SCRL_UP    &trans           &trans                  &trans  &trans  &trans  &trans  &trans
+&trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans          &trans          &trans           &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans          &trans          &trans           &trans  &trans  &trans  &trans                          &trans
             >;
         };
 
@@ -146,8 +148,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &bootloader  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans                          &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
     };
 };
