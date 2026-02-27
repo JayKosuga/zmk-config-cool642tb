@@ -129,13 +129,11 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E     &kp R                             &kp T                                                                           &kp Y                &kp U  &kp I      &kp O       &kp P
-&kp A             &kp S         &kp D     &kp F                             &kp G             &trans                      &kp APOS                          &kp H                &kp J  &kp K      &kp L       &mt PLUS MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C     &kp V                             &kp B             &kp TAB                     &kp SEMI                          &kp N                &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&kp ESCAPE        &kp LEFT_ALT  &kp CAPS  &lt_to_layer_0 1 INTERNATIONAL_5  &mt LEFT_GUI RET  &lt_to_layer_0 5 BACKSPACE  &lt_to_layer_0 2 INTERNATIONAL_5  &mt RIGHT_GUI SPACE                                &kp EQUAL
+&kp Q             &kp W         &kp E     &kp R                             &kp T                                                                                 &kp Y                &kp U  &kp I      &kp O       &kp P
+&kp A             &kp S         &kp D     &kp F                             &kp G             &trans                            &kp APOS                          &kp H                &kp J  &kp K      &kp L       &mt PLUS MINUS
+&mt LEFT_SHIFT Z  &kp X         &kp C     &kp V                             &kp B             &kp TAB                           &kp SEMI                          &kp N                &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
+&kp ESCAPE        &kp LEFT_ALT  &kp CAPS  &lt_to_layer_0 5 INTERNATIONAL_5  &mt LEFT_GUI RET  &lt_to_layer_0 1 INTERNATIONAL_5  &lt_to_layer_0 2 INTERNATIONAL_5  &mt RIGHT_GUI SPACE                                &kp EQUAL
             >;
-
-            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
         FUNCTION {
@@ -145,8 +143,6 @@
 &trans          &trans  &trans  &trans  &bt BT_SEL 1  &bt BT_SEL 0  &trans  &trans  &mkp MB1  &mkp MB2  &trans  &trans
 &bt BT_CLR_ALL  &trans  &trans  &trans  &trans        &trans        &trans  &trans                              &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         NUM {
@@ -165,8 +161,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
         MOUSE {
@@ -180,10 +174,10 @@
 
         SCROLL {
             bindings = <
-&trans  &trans          &msc SCRL_UP    &trans           &trans                  &trans  &trans  &trans  &trans  &trans
-&trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans          &trans          &trans           &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans          &trans          &trans           &trans  &trans  &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans
             >;
         };
 
