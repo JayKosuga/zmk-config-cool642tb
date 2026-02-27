@@ -88,8 +88,10 @@
 &kp Q             &kp W         &kp E     &kp R                  &kp T                                                         &kp Y                   &kp U  &kp I      &kp O       &kp P
 &kp A             &kp S         &kp D     &kp F                  &kp G                 &trans           &kp APOS               &kp H                   &kp J  &kp K      &kp L       &mt PLUS MINUS
 &mt LEFT_SHIFT Z  &kp X         &kp C     &kp V                  &kp B                 &kp TAB          &kp SEMI               &kp N                   &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&kp ESCAPE        &kp LEFT_ALT  &kp CAPS  &lt 5 INTERNATIONAL_5  &mt LEFT_COMMAND RET  &lt 1 BACKSPACE  &lt 2 INTERNATIONAL_5  &mt LEFT_COMMAND SPACE                                &kp EQUAL
+&kp ESCAPE        &kp LEFT_ALT  &kp CAPS  &lt 1 INTERNATIONAL_5  &mt LEFT_COMMAND RET  &lt 5 BACKSPACE  &lt 2 INTERNATIONAL_5  &mt LEFT_COMMAND SPACE                                &kp EQUAL
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         FUNCTION {
