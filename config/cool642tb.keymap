@@ -91,7 +91,7 @@
 &kp ESCAPE        &kp LEFT_ALT  &kp CAPS  &lt_to_layer_0 5 INTERNATIONAL_5  &mt LGUI RET  &lt_to_layer_0 1 INTERNATIONAL_5  &lt_to_layer_0 2 INTERNATIONAL_5  &kp SPACE                                &kp EQUAL
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp K_VOLUME_DOWN K_VOLUME_UP>;
         };
 
         FUNCTION {
